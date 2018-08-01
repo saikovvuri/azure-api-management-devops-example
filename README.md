@@ -36,6 +36,13 @@ We realize our customers bring a wide range of engineering cultures and existing
 
 If you have any questions or feedback, please raise issues in the repository or email us at apimgmt at microsoft dotcom. We also started an [FAQ page](./FAQ.md) to answer most common questions. 
 
+## Example of provisioning via Azure CLI
+az group deployment create --resource-grou
+p apimgmt --name apimgmtdeployment --template-uri https://raw.githubusercontent.com/[your repository]/azure-api-management-devo
+ps-example/master/example/master.template.json --parameters publisherEmail="admin@contoso.com" publisherName="ContosoApi
+Mgmt" ApimServiceName="contosoapim-dev-demo" repoBaseUrl="https://raw.githubusercontent.com/[your repository]/azure-api-managem
+ent-devops-example/master/example/"
+
 ## Contributing
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a
